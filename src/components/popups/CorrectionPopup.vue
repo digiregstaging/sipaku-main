@@ -13,7 +13,7 @@ async function updateCorrection() {
   const { id, yField, xField, hField, rollField, pitchField, trackField, noteField } = correctionData;
 
   try {
-    await axiosBasicAuth.put("/rest/api/correct/", {
+    await axiosBasicAuth.put("/api/correct/", {
       base_id,
       drift_x: xField,
       drift_y: yField,

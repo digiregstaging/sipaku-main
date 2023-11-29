@@ -325,7 +325,7 @@ export async function loadPanorama(pano_key, firstInitMap = true, firstInitPanor
 
 async function getCorrection(data) {
   const { id } = data;
-  const response = await axiosBasicAuth.get("/rest/api/correct", {
+  const response = await axiosBasicAuth.get("/api/correct", {
     params: {
       base_id: id,
     },
