@@ -6,7 +6,7 @@ import { decryptData } from "@/modules/encryption";
 const { accessToken } = JSON.parse(decryptData(sessionStorage.getItem("userData")));
 
 export const axiosClient = axios.create({
-  baseURL: `https://backend.dev.observer.xyz`,
+  baseURL: `https://backend.observer.xyz`,
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",

@@ -22,7 +22,7 @@ async function getOrganization(data) {
   try {
     const response = await axios({
       method: "get",
-      url: `https://backend.dev.observer.xyz/organization_users/?user=${id}`,
+      url: `https://backend.observer.xyz/organization_users/?user=${id}`,
       headers: {
         Authorization: `Bearer ${accessToken}`,
       },
@@ -57,7 +57,7 @@ async function handleLogin() {
 
   isLoadingLogin.value = true;
   try {
-    const response = await axios.post("https://backend.dev.observer.xyz/auth/login/", data);
+    const response = await axios.post("https://backend.observer.xyz/auth/login/", data);
 
     getOrganization(response.data);
 
