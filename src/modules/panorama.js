@@ -129,6 +129,7 @@ export function fixChanged() {
 }
 
 export function setCorrection(correction) {
+  console.log(correction)
   const { id, drift_x, drift_y, height, roll, pitch, track } = correction;
 
   correctionData.id = id;
@@ -330,7 +331,8 @@ async function getCorrection(data) {
       base_id: id,
     },
   });
-  setCorrection(response.data[0]);
+  console.log(response)
+  setCorrection(response.data.data[0]);
 }
 
 async function getPanoramaDetails(pano_key) {
