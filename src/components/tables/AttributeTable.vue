@@ -20,7 +20,7 @@ watch(selectedWFS, (newValue, oldValue) => {
     <div class="d-flex gap-2">
       <select class="form-select form-select-sm" v-model="selectedWFS">
         <option disabled :value="{}">Choose Available WFS</option>
-        <option v-for="layer in layerList.kumuh360" :key="layer.id" :value="layer">{{ layer.name }}</option>
+        <option v-for="layer in layerList.sipaku" :key="layer.id" :value="layer">{{ layer.name }}</option>
       </select>
       <div class="input-group input-group-sm">
         <span class="input-group-text">

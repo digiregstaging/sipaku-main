@@ -47,9 +47,9 @@ export const panoramaLayer = new TileLayer({
   title: "panorama",
   zIndex: 10,
   source: new TileWMS({
-    url: "https://geoserver.observer.xyz/geoserver/kumuh360/wms?service=WMS",
+    url: "https://geoserver.observer.xyz/geoserver/sipaku/wms?service=WMS",
     params: {
-      LAYERS: "kumuh360:v_panorama_360kumuh",
+      LAYERS: "sipaku:v_panorama_360kumuh",
       TILED: true,
     },
     serverType: "geoserver",

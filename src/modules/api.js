@@ -6,7 +6,7 @@ import { getProject } from "@/modules/var";
 import { axiosClient } from "@/modules/axios";
 
 export const layerList = reactive({
-  kumuh360: [],
+  sipaku: [],
 });
 
 export async function getLayers() {
@@ -17,7 +17,7 @@ export async function getLayers() {
   });
   const { results } = response.data;
   addCustomVariable(results);
-  layerList.kumuh360 = results;
+  layerList.sipaku = results;
 
   checkLayerShow();
 }
@@ -39,5 +39,5 @@ function addCustomVariable(layers) {
 }
 
 function checkLayerShow() {
-  layerList.kumuh360.filter((layer) => layer.show && containerMap.addLayer(createVectorLayer(layer)));
+  layerList.sipaku.filter((layer) => layer.show && containerMap.addLayer(createVectorLayer(layer)));
 }

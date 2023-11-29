@@ -15,7 +15,7 @@ import { layerList } from "@/modules/api";
               <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#kumuh-360" aria-expanded="true">Kumuh 360</button>
               <div class="collapse show" id="kumuh-360">
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li class="form-check" v-for="layer in layerList.kumuh360" :key="layer.id">
+                  <li class="form-check" v-for="layer in layerList.sipaku" :key="layer.id">
                     <input class="form-check-input" v-model="layer.show" type="checkbox" :value="layer.name" :id="layer.name_layer" @change="(evt) => toggleVectorLayer(evt, layer)" />
                     <label class="form-check-label user-select-none text-capitalize" :for="layer.name_layer">{{ layer.name }}</label>
                   </li>
