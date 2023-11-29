@@ -1,0 +1,35 @@
+.logo-sipaku {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 10;
+  img {
+    height: 2.5rem;
+  }
+}
+
+ul li {
+  list-style: none;
+  i.fa-solid {
+    &:hover {
+      color: #0d6efd;
+    }
+  }
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+}
+
+.fs-7 {
+  font-size: 0.8rem;
+}
+
+.animate__animated.animate__zoomIn,
+.animate__animated.animate__zoomOut {
+  --animate-duration: 0.5s;
+}
+
+.user-select-none {
+  user-select: none;
+}
